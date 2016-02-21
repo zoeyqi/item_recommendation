@@ -33,10 +33,16 @@ public class AWSRequest {
 				"hFLoFXMknOAgLsj7Mc0GWqiR9VOfXJQoItcqtxlC");
 	}
 	
-	public void setRequest(String searchIndex, String keywords) {
+	public void setRequest(String searchIndex, String keywords, String responseGroups) {
 		// Fill in the request object
 		this.itemRequest.setSearchIndex(searchIndex);
 		this.itemRequest.setKeywords(keywords);
+		/*
+		 *  Specify the types of values to return
+		 *  Multiple response groups separated by commas
+		 *  i.e. ItemAttributes,Reviews,Images,Offers
+		 */
+		this.itemRequest.getResponseGroup().add(responseGroups);
 	}
 	
 	public ItemSearchResponse getResponse() {

@@ -11,15 +11,24 @@ public class Apps {
 	public static void main (String[] args) {
 		// This demonstrates how to use AWSRequest class
 		AWSRequest requestObj = new AWSRequest();
-		requestObj.setRequest("Books", "Software Engineering");
+		requestObj.setRequest("Books", "software engineering", "ItemAttributes,Reviews");
 		ItemSearchResponse result = requestObj.getResponse();
-	
 		// For all the items returned in the response, get all the title names
 		for (Items itemList : result.getItems()) {
 			for (Item item : itemList.getItem()){
-				System.out.println("Book title name: " +
-					item.getItemAttributes().getTitle());
-			}
-		}
-	}
-}
+				try {
+					System.out.println("Book title name: " +
+							item.getItemAttributes().getTitle());
+					
+					System.out.println("Customer Review URL: " +
+							item.getCustomerReviews().getIFrameURL());
+					
+					System.out.println("==================");
+				}
+				catch (Exception e) {
+					System.out.println(e);
+				}	
+			}	
+		}		
+	}		
+}	
