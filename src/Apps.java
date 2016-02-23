@@ -18,11 +18,16 @@ public class Apps {
 		 */
 		
 		scanner = new Scanner(System.in);
+		
 
 		//  prompt asking for search index
-		System.out.print("please chosse your search index from \n"+" Books, DVD, Music, Apparel, Video, Jewelry, Automotive, Watch, Electronics\n");
-
-	    System.out.print("Enter your search index: ");
+		System.out.print("please chosse your search index from \n"+
+		" Books, DVD, Music, Video"
+		+ "Apparel, Jewelry, Kitchen"
+		+ "Automotive, Watch, Electronics+"
+		+ "Miscellaneous\n");
+	    
+		System.out.print("Enter your search index: ");
 
 	    // get their input as a String
 		String searchIndex = scanner.nextLine();//suggest: Books
@@ -48,8 +53,14 @@ public class Apps {
 		for (Items itemList : result.getItems()) {
 			for (Item item : itemList.getItem()){
 				try {
-					System.out.println("Book title name: " +
+					System.out.println("Product title name: " +
 							item.getItemAttributes().getTitle());
+					
+					System.out.println("URL to the product: " +
+							item.getItemAttributes().getAudienceRating());
+					
+					System.out.println("URL to the product: " +
+							item.getDetailPageURL());
 					
 					System.out.println("Customer Review URL: " +
 							item.getCustomerReviews().getIFrameURL());
