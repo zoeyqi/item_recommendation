@@ -79,8 +79,11 @@ public class Apps {
 					System.out.println("Product title name: " +
 							item.getItemAttributes().getTitle());
 					
-					System.out.println("URL to the product: " +
-							item.getItemAttributes().getAudienceRating());
+					System.out.println("List price: " +
+							item.getItemAttributes().getListPrice().getFormattedPrice());
+					
+					System.out.println("Sales Rank: " +
+							item.getSalesRank());
 					
 					System.out.println("URL to the product: " +
 							item.getDetailPageURL());
