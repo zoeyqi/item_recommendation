@@ -21,8 +21,8 @@ public class Apps {
 		System.out.print("Please choose your search index from the list below:\n"
 				+ "Books, DVD, Music, Video, "
 				+ "Apparel, Jewelry, Kitchen, "
-				+ "Automotive, Watch, Electronics, "
-				+ "Miscellaneous\n");
+				+ "Automotive, Electronics, "
+				+ "Miscellaneous, All\n");
 	    
 		// suggest: Books
 		System.out.print("Enter your search index: ");
@@ -103,4 +103,4 @@ public class Apps {
 		}
 	System.out.println("The search finished...");
 	}		
-}	
+}
