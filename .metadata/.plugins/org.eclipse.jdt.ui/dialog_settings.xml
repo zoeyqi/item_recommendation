@@ -3,6 +3,7 @@
 	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
 	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
+	<item value="/Users/qianshengxin/Downloads/The_Hackers.git/src" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
 	<item value="/home/sharon/2016_spring/software engineering/The_Hackers " key="org.eclipse.jdt.ui.last.external.project"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
@@ -13,6 +14,9 @@
 		<item value="false" key="linkWithEditor"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>
