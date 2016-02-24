@@ -23,11 +23,13 @@ public class Apps {
 		
 
 		//  prompt asking for search index
-		System.out.print("please chosse your search index from \n"+
-		" Books, DVD, Music, Video"
-		+ "Apparel, Jewelry, Kitchen"
-		+ "Automotive, Watch, Electronics+"
-		+ "Miscellaneous\n");
+		System.out.print("please choose your search index from \n"
+		+"Books \n"
+		+ "Video \n"
+		+ "Music \n"
+		+ "Blended \n"
+		+ "All\n"
+		+"if you are not sure, please type in All\n");
 	    
 		System.out.print("Enter your search index: ");
 
