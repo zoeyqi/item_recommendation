@@ -1,4 +1,4 @@
-Please test the program by running Apps.java with command "java Apps"
+Please test the program by running Apps.java in the Eclipse and the result will be showed in Eclipse console.
 
 The AWSRequest class constructs and makes a simple request to Product Advertising API over the Internet using SOAP to return information about a list of items. Upon success, the request retrieves a response object that can be used to return a variety of product information via the Product Advertising API Client-Side library.
 
