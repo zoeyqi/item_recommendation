@@ -24,11 +24,10 @@ public class Apps {
 
 		//  prompt asking for search index
 		System.out.print("please chosse your search index from \n"+
-		" Books \n"
-		+ "Music \n"
-		+ "Video \n"
-		+ "Blended \n"
-		+ "All \n");
+		" Books, DVD, Music, Video"
+		+ "Apparel, Jewelry, Kitchen"
+		+ "Automotive, Watch, Electronics+"
+		+ "Miscellaneous\n");
 	    
 		System.out.print("Enter your search index: ");
 
@@ -108,4 +107,4 @@ public class Apps {
 		}
 	System.out.println("The search finished");
 	}		
-}
+}	
