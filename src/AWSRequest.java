@@ -1,7 +1,8 @@
 import com.ECS.client.jax.ItemSearchResponse;
 
 public class AWSRequest {
-	/* AWSRequest class creates a simple request to 
+	/* 
+	 * AWSRequest class creates a simple request to 
 	 * Product Advertising Amazon API 
 	 * and returns an item search response.
 	 */

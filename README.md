@@ -1,6 +1,8 @@
-please test the program by running Apps.java with command "java Apps"
+Please test the program by running Apps.java with command "java Apps"
 
-The linguistic analysis result is a int number. When the result is negtive means item review is negative. When the result is positive means item review is positive. The absolute value represents the degree of positive or negative. The "0" means neutral.
+The AWSRequest class constructs and makes a simple request to Product Advertising API over the Internet using SOAP to return information about a list of items. Upon success, the request retrieves a response object that can be used to return a variety of product information via the Product Advertising API Client-Side library.
+
+The linguistic analysis result is an int number. When the result is negative means item review is negative. When the result is positive means item review is positive. The absolute value represents the degree of positive or negative. The "0" means neutral.
 
 For the database part, we used JDBC to connect to the database and send SQL requests to the database.
 And we used PostgreSQL, so in order to test this part, you may need to download PostgreSQL, build a database,
