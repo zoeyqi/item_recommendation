@@ -1,4 +1,6 @@
 import com.ECS.client.jax.Item;
+
+import java.sql.Connection;
 import java.util.Scanner;
 import com.ECS.client.jax.ItemSearchResponse;
 import com.ECS.client.jax.Items;
@@ -46,6 +48,12 @@ public class Apps {
 		 *  This demonstrates how to use AWSRequest class
 		 */
 		
+		
+		System.out.print("Do you want to save the information to database? (y/n) ");
+		String optionfordb = scanner.nextLine();
+		int flag = 0; //to show if the table has created or not
+		
+		
 		AWSRequest requestObj = new AWSRequest();
 		requestObj.setRequest(searchIndex, searchKey, "ItemAttributes,Reviews");
 		ItemSearchResponse result = requestObj.getResponse();
@@ -53,6 +61,21 @@ public class Apps {
 		for (Items itemList : result.getItems()) {
 			for (Item item : itemList.getItem()){
 				try {
+					/*
+					 * For the database part, please first change the information in JDBC.java, 
+					 * then uncomment the statement.
+					 */
+					
+					if(optionfordb.equals("y")){
+						Connection conn = null; 
+						//conn = JDBC.getconn();  //uncomment me!(after changing the JDBC)
+						if(flag == 0){
+						   JDBC.createdb(conn);
+						   flag = 1;
+						}
+						JDBC.writedb(conn,item);
+					}
+					
 					System.out.println("Product title name: " +
 							item.getItemAttributes().getTitle());
 					
@@ -69,7 +92,7 @@ public class Apps {
 				}
 				catch (Exception e) {
 					System.out.println(e);
-				}	
+				}
 			}	
 		}		
 	}		

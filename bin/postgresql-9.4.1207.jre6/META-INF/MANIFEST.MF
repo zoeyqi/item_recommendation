@@ -1,0 +1,80 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1450817678695
+Build-Jdk: 1.8.0_66
+Built-By: vladimirsitnikov
+Bundle-Activator: org.postgresql.osgi.PGBundleActivator
+Bundle-Copyright: Copyright (c) 2003-2015, PostgreSQL Global Development
+  Group
+Bundle-Description: Java JDBC 4.0 (JRE 6+) driver for PostgreSQL databas
+ e
+Bundle-DocURL: http://jdbc.postgresql.org/
+Bundle-License: http://www.postgresql.org/about/licence/
+Bundle-ManifestVersion: 2
+Bundle-Name: PostgreSQL JDBC Driver JDBC40
+Bundle-SymbolicName: org.postgresql.jdbc40
+Bundle-Vendor: PostgreSQL Global Development Group
+Bundle-Version: 9.4.1207.jre6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.postgresql;version="9.4.1207.jre6";uses:="org.postgr
+ esql.copy,org.postgresql.fastpath,org.postgresql.largeobject,org.postgr
+ esql.util",org.postgresql.copy;version="9.4.1207.jre6";uses:="org.postg
+ resql,org.postgresql.core",org.postgresql.core;version="9.4.1207.jre6";
+ uses:="org.postgresql,org.postgresql.copy,org.postgresql.jdbc,org.postg
+ resql.util",org.postgresql.core.v2;version="9.4.1207.jre6";uses:="org.p
+ ostgresql.copy,org.postgresql.core,org.postgresql.util",org.postgresql.
+ core.v3;version="9.4.1207.jre6";uses:="org.postgresql.copy,org.postgres
+ ql.core,org.postgresql.util",org.postgresql.ds;version="9.4.1207.jre6";
+ uses:="javax.naming,javax.sql,org.postgresql.ds.common",org.postgresql.
+ ds.common;version="9.4.1207.jre6";uses:="javax.naming,javax.naming.spi,
+ org.postgresql",org.postgresql.fastpath;version="9.4.1207.jre6";uses:="
+ org.postgresql.core",org.postgresql.geometric;version="9.4.1207.jre6";u
+ ses:="org.postgresql.util",org.postgresql.gss;version="9.4.1207.jre6";u
+ ses:="javax.security.auth.callback,org.postgresql.core",org.postgresql.
+ hostchooser;version="9.4.1207.jre6";uses:="org.postgresql.util",org.pos
+ tgresql.jdbc;version="9.4.1207.jre6";uses:="javax.xml.transform,org.pos
+ tgresql,org.postgresql.copy,org.postgresql.core,org.postgresql.fastpath
+ ,org.postgresql.jdbc2,org.postgresql.largeobject,org.postgresql.util",o
+ rg.postgresql.jdbc2;version="9.4.1207.jre6",org.postgresql.jdbc2.option
+ al;version="9.4.1207.jre6";uses:="org.postgresql.ds",org.postgresql.jdb
+ c3;version="9.4.1207.jre6";uses:="org.postgresql.ds",org.postgresql.lar
+ geobject;version="9.4.1207.jre6";uses:="org.postgresql.core,org.postgre
+ sql.fastpath",org.postgresql.osgi;version="9.4.1207.jre6";uses:="javax.
+ sql,org.osgi.framework,org.osgi.service.jdbc",org.postgresql.ssl;versio
+ n="9.4.1207.jre6";uses:="javax.net.ssl,org.postgresql.core,org.postgres
+ ql.util",org.postgresql.ssl.jdbc4;version="9.4.1207.jre6";uses:="javax.
+ net.ssl,javax.security.auth.callback,org.postgresql.ssl,org.postgresql.
+ util",org.postgresql.sspi;version="9.4.1207.jre6";uses:="com.sun.jna,or
+ g.postgresql.core",org.postgresql.translation;version="9.4.1207.jre6",o
+ rg.postgresql.util;version="9.4.1207.jre6";uses:="org.postgresql.core",
+ org.postgresql.xa;version="9.4.1207.jre6";uses:="javax.naming,javax.sql
+ ,javax.transaction.xa,org.postgresql.core,org.postgresql.ds,org.postgre
+ sql.ds.common"
+Implementation-Title: PostgreSQL JDBC Driver - JDBC 4.0
+Implementation-Vendor: PostgreSQL Global Development Group
+Implementation-Vendor-Id: org.postgresql
+Implementation-Version: 9.4.1207.jre6
+Import-Package: javax.sql,javax.transaction.xa,javax.naming,com.sun.jna;
+ resolution:=optional,com.sun.jna.platform.win32;resolution:=optional,co
+ m.sun.jna.ptr;resolution:=optional,com.sun.jna.win32;resolution:=option
+ al,javax.crypto;resolution:=optional,javax.crypto.spec;resolution:=opti
+ onal,javax.naming.ldap;resolution:=optional,javax.naming.spi;resolution
+ :=optional,javax.net;resolution:=optional,javax.net.ssl;resolution:=opt
+ ional,javax.security.auth;resolution:=optional,javax.security.auth.call
+ back;resolution:=optional,javax.security.auth.login;resolution:=optiona
+ l,javax.security.auth.x500;resolution:=optional,javax.xml.parsers;resol
+ ution:=optional,javax.xml.stream;resolution:=optional,javax.xml.transfo
+ rm;resolution:=optional,javax.xml.transform.dom;resolution:=optional,ja
+ vax.xml.transform.sax;resolution:=optional,javax.xml.transform.stax;res
+ olution:=optional,javax.xml.transform.stream;resolution:=optional,org.i
+ etf.jgss;resolution:=optional,org.osgi.framework;resolution:=optional;v
+ ersion="[1.6,2)",org.osgi.service.jdbc;resolution:=optional;version="[1
+ .0,2)",org.w3c.dom;resolution:=optional,org.xml.sax;resolution:=optiona
+ l,waffle.windows.auth;resolution:=optional,waffle.windows.auth.impl;res
+ olution:=optional
+Main-Class: org.postgresql.util.PGJDBCMain
+Require-Capability: osgi.ee;filter:="(&(|(osgi.ee=J2SE)(osgi.ee=JavaSE))
+ (version>=1.8))"
+Specification-Title: JDBC
+Specification-Vendor: Oracle Corporation
+Specification-Version: 4.0
+Tool: Bnd-2.3.0.201405100607
