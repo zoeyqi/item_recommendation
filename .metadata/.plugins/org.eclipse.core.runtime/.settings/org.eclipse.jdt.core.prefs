@@ -9,3 +9,4 @@ org.eclipse.jdt.core.compiler.compliance=1.8
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
 org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.userLibrary.crawler=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/The_Hackers.git/src/commons-codec-1.10.jar"/>\n\t<archive path\="/The_Hackers.git/src/commons-httpclient-3.0-rc4.jar"/>\n\t<archive path\="/The_Hackers.git/src/commons-logging-1.2.jar"/>\n</userlibrary>\n
